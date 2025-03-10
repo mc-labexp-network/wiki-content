@@ -1,0 +1,409 @@
+---
+title: Тестовая страница
+description: На странице описан весь существующий функционал.
+---
+
+## Markdown
+```
+# Heading 1 
+ 
+## Heading 2
+ 
+### Heading 3
+ 
+#### Heading 4
+ 
+Hello World, **Bold**, _Italic_, ~~Hidden~~
+ 
+```js
+console.log('Hello World');
+\```
+ 
+1. First
+2. Second
+3. Third
+ 
+- Item 1
+- Item 2
+ 
+> Quote here
+ 
+![alt](/assets/img/cone.webp)
+ 
+| Table | Description |
+| ----- | ----------- |
+| Hello | World       |
+```
+
+# Heading example 1
+ 
+## Heading example 2 
+ 
+### Heading example 3
+ 
+#### Heading example 4
+ 
+Hello World, **Bold**, _Italic_, ~~Hidden~~
+ 
+```js
+console.log('Hello World');
+```
+ 
+1. First
+2. Second
+3. Third
+ 
+- Item 1
+- Item 2
+ 
+> Quote here
+ 
+![alt](/assets/img/cone.webp)
+ 
+| Syntax        | Description |   Test Text |
+| :------------ | :---------: | ----------: |
+| Header        |    Title    | Here's this |
+| Paragraph     |    Text     |    And more |
+| Strikethrough |             |    ~~Text~~ |
+
+<hr />
+
+## Callout
+
+Значение по умолчанию
+```
+<Callout>
+  Это сообщение Callout с использованием стиля по умолчанию.
+</Callout>
+```
+
+<Callout>
+  Это сообщение Callout с использованием стиля по умолчанию.
+</Callout>
+
+Информационное сообщение
+
+```
+<Callout type="info">
+  Это информационное сообщение. Используйте его, чтобы выделить полезные сведения.
+</Callout>
+```
+<Callout type="info">
+  Это информационное сообщение. Используйте его, чтобы выделить полезные сведения.
+</Callout>
+
+Предупреждение
+
+```
+<Callout type="warning">
+  Это предупреждающее сообщение. Проверьте конфигурацию перед продолжением.
+</Callout>
+```
+<Callout type="warning">
+  Это предупреждающее сообщение. Проверьте конфигурацию перед продолжением.
+</Callout>
+
+Сообщение об ошибке
+```
+<Callout type="danger">
+  Это сообщение об ошибке. Что-то пошло не так, пожалуйста, исправьте это.
+</Callout>
+```
+<Callout type="danger">
+  Это сообщение об ошибке. Что-то пошло не так, пожалуйста, исправьте это.
+</Callout>
+
+Успешное сообщение
+```
+<Callout type="success">
+  Операция завершена успешно! Продолжайте.
+</Callout>
+```
+<Callout type="success">
+  Операция завершена успешно! Продолжайте.
+</Callout>
+
+<hr />
+
+<Stepper>
+  <StepperItem title="Step 1: Clone the AriaDocs Repository">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum, felis sed efficitur tincidunt, justo nulla viverra enim, et maximus nunc dolor in lorem.
+  </StepperItem>
+  <StepperItem title="Step 2: Access the Project Directory">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non neque ut eros auctor accumsan. Mauris a nisl vitae magna ultricies aliquam.
+  </StepperItem>
+  <StepperItem title="Step 3: Install Required Dependencies">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut ipsum nec nulla ultricies porttitor et non justo.
+  </StepperItem>
+</Stepper>
+
+<br />
+## Code
+
+```jsx
+// In markdown directly use this
+<Stepper>
+  <StepperItem title="Step 1: Clone the AriaDocs Repository">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum, felis sed efficitur tincidunt, justo nulla viverra enim, et maximus nunc dolor in lorem.
+  </StepperItem>
+  <StepperItem title="Step 2: Access the Project Directory">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non neque ut eros auctor accumsan. Mauris a nisl vitae magna ultricies aliquam.
+  </StepperItem>
+  <StepperItem title="Step 3: Install Required Dependencies">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut ipsum nec nulla ultricies porttitor et non justo.
+  </StepperItem>
+</Stepper>
+```
+
+
+<hr />
+
+**Example:**
+
+```js title="apps/web/src/index.tsx"
+import { App } from './App';
+```
+
+**Code:**
+
+````mdx
+```js title="apps/web/src/index.tsx"
+import { App } from './App';
+```
+````
+
+## Code highlighting
+
+**Example:**
+
+```js
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        warning: "hsl(var(--warning))",
+        "warning-foreground": "hsl(var(--warning-foreground))",
+      },
+    },
+  },
+}
+```
+
+**Code:**
+
+````mdx
+```js
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        warning: "hsl(var(--warning))",
+        "warning-foreground": "hsl(var(--warning-foreground))",
+      },
+    },
+  },
+}
+```
+````
+
+## Inline code highlighting
+
+**Example:**
+
+The result of `[1, 2, 3].join('-'){:js}` is `'1-2-3'{:js}`.
+
+**Code:**
+
+```mdx
+The result of `[1, 2, 3].join('-'){:js}` is `'1-2-3'{:js}`.
+```
+
+## Context-aware inline code highlighting
+
+For example, if you had the following block of code:
+
+```js
+function getStringLength(str) {
+  return str.length;
+}
+```
+
+When we refer to `getStringLength{:.entity.name.function}` as a function,
+we can color it as such. Same with `function{:.keyword}`, or
+`str{:.variable.parameter}` vs. `str{:.variable.other.object}`, etc. This allows
+semantically link inline code to the nearest block of code it refers to.
+
+**Code:**
+````mdx
+When we refer to `getStringLength{:.entity.name.function}` as a function,
+we can color it as such. Same with `function{:.keyword}`, or
+`str{:.variable.parameter}` vs. `str{:.variable.other.object}`, etc. This allows
+semantically link inline code to the nearest block of code it refers to.
+````
+
+## Word highlighting
+
+**Example:**
+
+```css /pl-12/ /border/
+relative w-full pl-12 rounded-lg border
+```
+
+**Code:**
+````mdx
+```css /pl-12/ /border/
+relative w-full pl-12 rounded-lg border
+```
+````
+
+## Line highlighting
+
+**Example:**
+
+```js {2-4,6} showLineNumbers
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        warning: "hsl(var(--warning))",
+        "warning-foreground": "hsl(var(--warning-foreground))",
+      },
+    },
+  },
+}
+```
+
+**Code:**
+
+````mdx
+```js {2-4,6} showLineNumbers
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        warning: "hsl(var(--warning))",
+        "warning-foreground": "hsl(var(--warning-foreground))",
+      },
+    },
+  },
+}
+```
+````
+
+## Line numbering
+
+**Example:**
+
+```js showLineNumbers
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        warning: "hsl(var(--warning))",
+        "warning-foreground": "hsl(var(--warning-foreground))",
+      },
+    },
+  },
+}
+```
+
+**Code:**
+````mdx
+```js showLineNumbers
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        warning: "hsl(var(--warning))",
+        "warning-foreground": "hsl(var(--warning-foreground))",
+      },
+    },
+  },
+}
+```
+````
+
+## Diff
+
+**Example:**
+
+```diff
+const alertVariants = cva(
+- "relative w-full rounded-lg border",
++ "relative w-full pl-12 rounded-lg border"
+)
+```
+
+**Code:**
+
+````mdx
+```diff
+const alertVariants = cva(
+- "relative w-full rounded-lg border",
++ "relative w-full pl-12 rounded-lg border"
+)
+```
+````
+
+## ANSI Highlight
+
+**Example:**
+
+```ansi
+[0;36m  vite v5.0.0[0;32m dev server running at:[0m
+
+  > Local: [0;36mhttp://localhost:[0;36;1m3000[0;36m/[0m
+  > Network: [0;2muse `--host` to expose[0m
+
+  [0;36mready in 125ms.[0m
+
+[0;2m8:38:02 PM[0m [0;36;1m[vite][0m [0;32mhmr update [0;2m/src/App.jsx
+```
+
+Inline ANSI: `> Local: [0;36mhttp://localhost:[0;36;1m3000[0;36m/[0m`
+
+**Code:**
+
+````mdx
+```ansi
+[0;36m  vite v5.0.0[0;32m dev server running at:[0m
+
+  > Local: [0;36mhttp://localhost:[0;36;1m3000[0;36m/[0m
+  > Network: [0;2muse `--host` to expose[0m
+
+  [0;36mready in 125ms.[0m
+
+[0;2m8:38:02 PM[0m [0;36;1m[vite][0m [0;32mhmr update [0;2m/src/App.jsx
+```
+
+Inline ANSI: `> Local: [0;36mhttp://localhost:[0;36;1m3000[0;36m/[0m`
+````
+
+## Word group highlighting by id
+
+Put an id after `#` after the words.
+This allows you to color characters differently based on the given id.
+
+**Example:**
+
+```js /age/#v /name/#v /setAge/#s /setName/#s /50/#i /"Taylor"/#i
+const [age, setAge] = useState(50);
+const [name, setName] = useState("Taylor");
+```
+
+**Code:**
+````md
+```js /age/#v /name/#v /setAge/#s /setName/#s /50/#i /"Taylor"/#i
+const [age, setAge] = useState(50);
+const [name, setName] = useState("Taylor");
+```
+````
+
+To change or add new styles:
+
+```css title="apps/web/src/styles/mdx.css"
+[data-chars-id='v'] {
+  @apply !text-pink-300 bg-rose-800/50 font-bold;
+}
+```
+
