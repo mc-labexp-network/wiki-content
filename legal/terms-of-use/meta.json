@@ -1,4 +1,8 @@
 {
+    "title": "{title}",
+    "translate": {
+        "title": "widgets.rules_and_docs.navigation.wiki.tems_of_use"
+    },
     "pages": [
         "agreement",
         "offer",
