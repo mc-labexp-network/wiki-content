@@ -1,6 +1,10 @@
 {
+    "translate": {
+        "test": "test"
+    },
     "pages": [
         "terms-of-use",
+        "---{test}---",
         "promo"
     ]
 }
