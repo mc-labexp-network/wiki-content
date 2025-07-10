@@ -1,0 +1,206 @@
+[
+    {
+        "id": "about-project",
+        "title": "О проекте",
+        "hidden": false,
+        "separator": true,
+        "defaultOpen": false,
+        "icon": "",
+        "file": "",
+        "files": []
+    },
+    {
+        "id": "index",
+        "title": "о LabExp",
+        "hidden": false,
+        "separator": false,
+        "defaultOpen": false,
+        "icon": "",
+        "file": "index.mdx",
+        "files": []
+    },
+    {
+        "id": "moders",
+        "title": "Связь с модерацией",
+        "hidden": false,
+        "separator": false,
+        "defaultOpen": false,
+        "icon": "",
+        "file": "moders.mdx",
+        "files": []
+    },
+    {
+        "id": "start-game",
+        "title": "Начало игры",
+        "hidden": false,
+        "separator": true,
+        "defaultOpen": false,
+        "icon": "",
+        "file": "",
+        "files": []
+    },
+    {
+        "id": "getting-started",
+        "title": "Как начать играть",
+        "hidden": false,
+        "separator": false,
+        "defaultOpen": false,
+        "icon": "",
+        "file": "getting-started.mdx",
+        "files": []
+    },
+    {
+        "id": "survival",
+        "title": "Вики выживания",
+        "hidden": false,
+        "separator": false,
+        "defaultOpen": false,
+        "icon": "",
+        "file": "",
+        "files": [
+            {
+                "id": "about",
+                "title": "О режиме",
+                "hidden": false,
+                "separator": false,
+                "defaultOpen": false,
+                "icon": "",
+                "file": "survival/about.mdx",
+                "files": []
+            }
+        ]
+    },
+    {
+        "id": "magic",
+        "title": "Вики магика",
+        "hidden": true,
+        "separator": false,
+        "defaultOpen": false,
+        "icon": "",
+        "file": "index.mdx",
+        "files": []
+    },
+    {
+        "id": "docs",
+        "title": "Правовые документы",
+        "hidden": false,
+        "separator": true,
+        "defaultOpen": false,
+        "icon": "",
+        "file": "",
+        "files": []
+    },
+    {
+        "id": "rules",
+        "title": "Правила проекта",
+        "hidden": false,
+        "separator": false,
+        "defaultOpen": false,
+        "icon": "",
+        "file": "rules.mdx",
+        "files": []
+    },
+    {
+        "id": "mods",
+        "title": "Модификации",
+        "hidden": false,
+        "separator": false,
+        "defaultOpen": false,
+        "icon": "",
+        "file": "mods.mdx",
+        "files": []
+    },
+    {
+        "id": "legal",
+        "title": "Юридические документы",
+        "hidden": false,
+        "separator": false,
+        "defaultOpen": false,
+        "icon": "",
+        "file": "",
+        "files": [
+            {
+                "id": "terms-of-use",
+                "title": "Договоры и документы",
+                "hidden": false,
+                "separator": false,
+                "defaultOpen": false,
+                "icon": "",
+                "file": "",
+                "files": [
+                    {
+                        "id": "offerta",
+                        "title": "Договор оферты",
+                        "hidden": false,
+                        "separator": false,
+                        "defaultOpen": false,
+                        "icon": "",
+                        "file": "legal/terms-of-use/offer.mdx",
+                        "files": []
+                    },
+                    {
+                        "id": "license",
+                        "title": "Лиц. соглашение",
+                        "hidden": false,
+                        "separator": false,
+                        "defaultOpen": false,
+                        "icon": "",
+                        "file": "legal/terms-of-use/agreement.mdx",
+                        "files": []
+                    },
+                    {
+                        "id": "privacy",
+                        "title": "Политика Конфиденциальности",
+                        "hidden": false,
+                        "separator": false,
+                        "defaultOpen": false,
+                        "icon": "",
+                        "file": "legal/terms-of-use/privacy.mdx",
+                        "files": []
+                    },
+                    {
+                        "id": "labexpid",
+                        "title": "LabExp.ID О сервисе",
+                        "hidden": false,
+                        "separator": false,
+                        "defaultOpen": false,
+                        "icon": "",
+                        "file": "legal/terms-of-use/labexpid.mdx",
+                        "files": []
+                    }
+                ]
+            },
+            {
+                "id": "sales",
+                "title": "Акции проекта",
+                "hidden": false,
+                "separator": false,
+                "defaultOpen": false,
+                "icon": "",
+                "file": "",
+                "files": [
+                    {
+                        "id": "open",
+                        "title": "Акция «Открытие проекта»",
+                        "hidden": false,
+                        "separator": false,
+                        "defaultOpen": false,
+                        "icon": "",
+                        "file": "legal/sales/open.mdx",
+                        "files": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "test",
+        "title": "Тестовая страница",
+        "hidden": false,
+        "separator": false,
+        "defaultOpen": false,
+        "icon": "",
+        "file": "test.mdx",
+        "files": []
+    }
+]
